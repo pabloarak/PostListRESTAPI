@@ -1,0 +1,32 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "A Simple Post Platform - DB Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "DEBUG=PostListRESTAPI:* nyc --reporter=lcov ava tests/ --verbose",
+    "setup": "DEBUG=PostListRESTAPI:* node setup.js",
+    "lint": "standard"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Pablo Arak",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "nyc": "^13.1.0",
+    "proxyquire": "^2.1.0",
+    "sinon": "^7.1.1",
+    "sqlite3": "^4.0.3",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "debug": "^4.1.0",
+    "defaults": "^1.0.3",
+    "inquirer": "^6.2.0",
+    "pg": "^7.6.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.41.0"
+  }
+}
