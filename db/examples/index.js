@@ -14,9 +14,9 @@ const run = async () => {
   const {Post} = await db(config).catch(handleFatalError)
 
   const post = await Post.createOrUpdate({
-    id: 6,
-    name: 'test 6',
-    description: 'test 6'
+    id: 3,
+    name: 'Post 3',
+    description: 'Un post más 3'
   }).catch(handleFatalError)
 
   console.log('--post--')
